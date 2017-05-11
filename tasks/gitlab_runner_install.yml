@@ -1,0 +1,6 @@
+---
+- name: Install Gitlab CI multi runner
+  apt:
+    name: "{{ gitlab_runner_apt_package }}"
+    state: present
+    update_cache: yes

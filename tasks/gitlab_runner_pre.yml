@@ -1,0 +1,6 @@
+---
+- name: Run script for check before install Gitlab CI multi runner
+  command: >
+    curl -L {{ gitlab_runner_script_url }} | bash
+  when:
+    - gitlab_runner_script_url is defined
