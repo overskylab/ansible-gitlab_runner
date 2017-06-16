@@ -7,3 +7,4 @@
 
 - include: gitlab_runner_pre.yml
 - include: gitlab_runner_install.yml
+- include: gitlab_runner_post.yml

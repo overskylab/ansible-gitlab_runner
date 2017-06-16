@@ -1,0 +1,12 @@
+---
+- name: Register runner
+  command: >
+    gitlab-ci-multi-runner register -n
+    -u {{ gitlab_runner_ci_server_url }}
+    -r {{ gitlab_runner_token }}
+    --executor shell
+    --name {{ gitlab_runner_name }}
+  when:
+    - gitlab_runner_name is defined
+    - gitlab_runner_ci_server_url is defined
+    - gitlab_runner_token is defined

@@ -1,1 +1,4 @@
 ---
+gitlab_runner_name: gitlab-runner
+gitlab_runner_ci_server_url: http://192.168.1.20
+gitlab_runner_token: example_token
